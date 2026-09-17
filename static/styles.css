@@ -289,9 +289,6 @@ section {
     z-index: 1;
 }
 
-
-
-
 .footer {
     display: flex;
     flex-direction: row;
@@ -361,9 +358,7 @@ section {
 }
 
 .lightbox {
-    display: none;
     position: fixed;
-    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
@@ -404,4 +399,144 @@ section {
 
 .close-btn:hover {
     color: #bbb;
+}
+
+@media (max-width: 1200px) {
+    section {
+        padding: 60px 20px;
+    }
+    
+    .photo-full {
+        right: -20px;
+        width: 300px;
+        height: 600px;
+    }
+    
+    .quotes-block {
+        top: 450px;
+    }
+    
+    .piggy-container {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    #main {
+        height: auto;
+        min-height: auto;
+    }
+
+    .title-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .title-card h1 {
+        padding: 40px 20px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .photo-full {
+        position: static;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .name-card {
+        position: static;
+        transform: none;
+        padding: 10px 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .quotes-block {
+        position: static;
+        width: 100%;
+        top: auto;
+        right: auto;
+    }
+
+    .card1, .card2 {
+        max-width: 100%;
+    }
+
+    .piggy-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .piggy-hello {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .header-container {
+        height: 50px;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .header-menu {
+        gap: 15px;
+    }
+
+    .menu-item {
+        font-size: 13px;
+        gap: 4px;
+    }
+
+    .menu-item .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .title-card h1 {
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .pyramid-part {
+        gap: 15px;
+    }
+
+    .pyr-item {
+        max-width: 90px;
+    }
+
+    .pyr-item p {
+        font-size: 11px;
+    }
+
+    .pyr-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .social {
+        gap: 20px;
+    }
 }
