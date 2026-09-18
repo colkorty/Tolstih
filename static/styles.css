@@ -441,11 +441,7 @@ section {
     }
 
     .photo-full {
-        position: static;
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-        margin: 20px 0;
+        display: none;
     }
 
     .name-card {
@@ -496,16 +492,7 @@ section {
     .menu-item p {
         display: none;
     }
-    
-    .menu-item {
-        font-size: 13px;
-        gap: 4px;
-    }
 
-    .menu-item .icon {
-        width: 24px;
-        height: 24px;
-    }
 
     .title-card h1 {
         font-size: 22px;

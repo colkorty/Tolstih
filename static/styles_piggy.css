@@ -157,7 +157,6 @@ body {
     }
 
     .header {
-        flex-direction: column;
         justify-content: center;
         padding: 15px 20px;
         gap: 10px;
@@ -178,19 +177,10 @@ body {
         text-align: center;
     }
 
-    .icon {
-        width: 40px;
-        height: 40px;
-    }
-
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 10px;
         padding: 10px;
-    }
-    
-    .grid-img {
-        height: 200px;
     }
 
     .close-btn {
